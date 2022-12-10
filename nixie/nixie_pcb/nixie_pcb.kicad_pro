@@ -48,18 +48,7 @@
           "min_clearance": 0.508
         }
       },
-      "diff_pair_dimensions": [
-        {
-          "gap": 0.0,
-          "via_gap": 0.0,
-          "width": 0.0
-        },
-        {
-          "gap": 5.5,
-          "via_gap": 0.0,
-          "width": 9.0
-        }
-      ],
+      "diff_pair_dimensions": [],
       "drc_exclusions": [],
       "meta": {
         "version": 2
@@ -95,7 +84,7 @@
         "skew_out_of_range": "error",
         "through_hole_pad_without_hole": "error",
         "too_many_vias": "error",
-        "track_dangling": "ignore",
+        "track_dangling": "warning",
         "track_width": "error",
         "tracks_crossing": "error",
         "unconnected_items": "error",
@@ -108,43 +97,23 @@
         "allow_blind_buried_vias": false,
         "allow_microvias": false,
         "max_error": 0.005,
-        "min_clearance": 0.127,
-        "min_copper_edge_clearance": 0.19999999999999998,
-        "min_hole_clearance": 0.32999999999999996,
-        "min_hole_to_hole": 0.254,
+        "min_clearance": 0.0,
+        "min_copper_edge_clearance": 0.0,
+        "min_hole_clearance": 0.25,
+        "min_hole_to_hole": 0.25,
         "min_microvia_diameter": 0.19999999999999998,
         "min_microvia_drill": 0.09999999999999999,
         "min_silk_clearance": 0.0,
-        "min_through_hole_diameter": 0.19999999999999998,
-        "min_track_width": 0.127,
-        "min_via_annular_width": 0.13,
+        "min_through_hole_diameter": 0.3,
+        "min_track_width": 0.19999999999999998,
+        "min_via_annular_width": 0.049999999999999996,
         "min_via_diameter": 0.39999999999999997,
         "solder_mask_clearance": 0.0,
         "solder_mask_min_width": 0.0,
         "use_height_for_length_calcs": true
       },
-      "track_widths": [
-        0.0,
-        0.127,
-        0.3048,
-        0.4064,
-        0.508,
-        1.27
-      ],
-      "via_dimensions": [
-        {
-          "diameter": 0.0,
-          "drill": 0.0
-        },
-        {
-          "diameter": 0.6,
-          "drill": 0.3
-        },
-        {
-          "diameter": 1.0,
-          "drill": 0.4
-        }
-      ],
+      "track_widths": [],
+      "via_dimensions": [],
       "zones_allow_external_fillets": false,
       "zones_use_no_outline": true
     },
@@ -364,7 +333,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "clock_pcb.kicad_pro",
+    "filename": "nixie_pcb.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -396,14 +365,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "pwr",
-        "nets": [
-          "+3V3",
-          "GND",
-          "Net-(BT1-Pad1)",
-          "Net-(D2-Pad1)",
-          "Net-(D3-Pad2)",
-          "VBUS"
-        ],
+        "nets": [],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.25,
@@ -421,24 +383,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "signal",
-        "nets": [
-          "/PAGE2/D+",
-          "/PAGE2/D-",
-          "/PAGE2/QSPI_SCLK",
-          "/PAGE2/QSPI_SD0",
-          "/PAGE2/QSPI_SD1",
-          "/PAGE2/QSPI_SD2",
-          "/PAGE2/QSPI_SD3",
-          "/PAGE2/SWCLK",
-          "/PAGE2/SWDIO",
-          "/PAGE2/USBBOOT",
-          "/PAGE2/USB_D+",
-          "/PAGE2/USB_D-",
-          "/PAGE2/~{QSPI_CS}",
-          "/PAGE2/~{RESET}",
-          "Net-(J1-PadA5)",
-          "Net-(J1-PadB5)"
-        ],
+        "nets": [],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.127,
@@ -461,7 +406,7 @@
       "step": "",
       "vrml": ""
     },
-    "page_layout_descr_file": ""
+    "page_layout_descr_file": "C:/Users/mitch/projects/kicad_lib/sheet_template.kicad_wks"
   },
   "schematic": {
     "annotate_start_num": 0,
@@ -487,7 +432,7 @@
       ],
       "intersheets_ref_own_page": false,
       "intersheets_ref_prefix": "",
-      "intersheets_ref_short": true,
+      "intersheets_ref_short": false,
       "intersheets_ref_show": false,
       "intersheets_ref_suffix": "",
       "junction_size_choice": 3,
@@ -521,14 +466,6 @@
     [
       "e63e39d7-6ac0-4ffd-8aa3-1841a4541b55",
       ""
-    ],
-    [
-      "e5f4b62e-4ea8-4014-b845-4f36ee3853d9",
-      "PAGE2"
-    ],
-    [
-      "f40a42f5-65fe-434e-9c82-55cea7abd9dd",
-      "PAGE3"
     ]
   ],
   "text_variables": {}
