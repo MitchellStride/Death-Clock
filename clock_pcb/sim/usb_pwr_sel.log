@@ -1,3 +1,1 @@
-Circuit: * C:\Users\mitch\projects\Death-Clock\clock_pcb\sim\usb_pwr_sel.asc
-
-Warning: Multiple definitions of model "aons66402" Type: Vdmos1
+Fatal Error: Could not open include file "C:\projects\IOT-AutoHome\esp8266_module\sim\AO3401.mod"
